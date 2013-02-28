@@ -1,5 +1,10 @@
 <h1>Hello1</h1>
 
+ID: <%= @id %><br />
+Next page: <%= @page + 1 %><br />
+
 <% @array.each do |n| %>
 	<%= n %><br />
 <% end %>
+
+<%= link_to("My first link", {:action => 'index'} ) %>
